@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Contact Hero Section -->
+<header class="relative w-full min-h-[40vh] flex items-center justify-center overflow-hidden pt-20">
+    <div class="absolute inset-0 z-0">
+        <img src="{{ url_for('static', filename='images/hero-bg.jpg') }}" alt="Contact Background" class="w-full h-full object-cover">
+        <!-- Deep cinematic overlay fading into cream -->
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/95 via-dark/80 to-cream"></div>
+    </div>
+    
+    <!-- Floating abstract ambient shapes -->
+    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-gold/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-8" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="w-16 h-16 mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(255,255,255,0.1)] group hover:scale-110 transition-transform duration-500">
+            <i class="fa-solid fa-paper-plane text-2xl text-gold group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-500"></i>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-white font-kannada drop-shadow-lg mb-4">ಸಂಪರ್ಕಿಸಿ</h1>
+        <p class="text-gold tracking-[0.3em] uppercase text-xs md:text-sm font-bold">Get In Touch With Us</p>
+    </div>
+</header>
+
+<section class="max-w-7xl mx-auto px-4 py-16 -mt-16 relative z-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        
+        <!-- Left Column: Premium Contact Information & Socials -->
+        <div class="lg:col-span-5 flex flex-col gap-8">
+            
+            <!-- Main Contact Info Card -->
+            <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl border border-gray-100 relative overflow-hidden group" data-aos="fade-right" data-aos-delay="100">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-maroon/5 rounded-full blur-2xl group-hover:bg-maroon/10 transition duration-500"></div>
+                
+                <h3 class="font-bold text-2xl text-gray-800 mb-2 font-kannada">ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</h3>
+                <p class="text-gray-500 text-sm mb-8">Reach out to us for volunteering, donations, or any festival-related queries.</p>
+                
+                <ul class="space-y-8">
+                    <!-- WhatsApp -->
+                    <li class="flex items-start gap-5 group/item">
+                        <div class="w-12 h-12 bg-green-50 rounded-2xl flex items-center justify-center shrink-0 group-hover/item:bg-green-500 group-hover/item:text-white transition-colors duration-300 shadow-sm border border-green-100 group-hover/item:border-green-500">
+                            <i class="fa-brands fa-whatsapp text-green-500 text-xl group-hover/item:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-sm text-gray-800 uppercase tracking-wider mb-1">WhatsApp</span>
+                            <a href="https://wa.me/919876543210" target="_blank" class="text-sm text-gray-600 hover:text-green-600 font-medium transition-colors">+91 98765 43210</a>
+                        </div>
+                    </li>
+                    <!-- Email -->
+                    <li class="flex items-start gap-5 group/item">
+                        <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0 group-hover/item:bg-blue-500 group-hover/item:text-white transition-colors duration-300 shadow-sm border border-blue-100 group-hover/item:border-blue-500">
+                            <i class="fa-regular fa-envelope text-blue-500 text-xl group-hover/item:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-sm text-gray-800 uppercase tracking-wider mb-1">Email Support</span>
+                            <a href="mailto:hadinaruganeshotsava@gmail.com" class="text-sm text-gray-600 hover:text-blue-600 font-medium transition-colors break-all">hadinaruganeshotsava@gmail.com</a>
+                        </div>
+                    </li>
+                    <!-- Location -->
+                    <li class="flex items-start gap-5 group/item">
+                        <div class="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center shrink-0 group-hover/item:bg-red-500 group-hover/item:text-white transition-colors duration-300 shadow-sm border border-red-100 group-hover/item:border-red-500">
+                            <i class="fa-solid fa-location-dot text-red-500 text-xl group-hover/item:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-sm text-gray-800 uppercase tracking-wider mb-1">Festival Venue</span>
+                            <span class="text-sm text-gray-600 font-medium leading-relaxed">Hadinaru Village, Nanjangud Taluk,<br>Mysuru District, Karnataka, India</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social Media Action Card -->
+            <div class="bg-gradient-to-br from-dark to-maroon p-8 rounded-3xl shadow-xl text-white relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-gold/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                
+                <h3 class="font-bold text-xl mb-6 flex items-center gap-3">
+                    <i class="fa-brands fa-instagram text-2xl text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 to-pink-500"></i>
+                    Join Our Community
+                </h3>
+                
+                <div class="flex items-center gap-4 bg-white/5 backdrop-blur-sm p-4 rounded-2xl border border-white/10 mb-6 group-hover:bg-white/10 transition-colors">
+                    <div class="w-16 h-16 bg-white p-1 rounded-xl shrink-0 shadow-lg">
+                        <img src="{{ url_for('static', filename='images/qr-insta.png') }}" alt="QR Code" class="w-full h-full object-contain rounded-lg">
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-300 mb-1">Scan to Follow</p>
+                        <p class="font-bold text-sm">@basava_brigade_hadinaru</p>
+                    </div>
+                </div>
+
+                <a href="https://www.instagram.com/basava_brigade_hadinaru?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="block w-full py-3 text-center bg-white text-dark font-bold rounded-xl hover:bg-gold hover:shadow-[0_0_20px_rgba(224,184,90,0.5)] transition-all transform hover:-translate-y-1">
+                    Follow on Instagram &rarr;
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column: Interactive Map & Forms -->
+        <div class="lg:col-span-7 flex flex-col gap-8">
+            
+            <!-- Ultra Premium Map Card -->
+            <div class="bg-white p-2 rounded-3xl shadow-2xl border border-gray-100 relative group overflow-hidden" data-aos="fade-left" data-aos-delay="150">
+                <!-- Outer decorative frame for the map -->
+                <div class="absolute inset-0 border-[6px] border-white z-20 rounded-3xl pointer-events-none"></div>
+                
+                <div class="w-full h-[400px] md:h-[450px] rounded-2xl overflow-hidden relative">
+                    <!-- Base Map Image -->
+                    <img src="{{ url_for('static', filename='images/map-bg.jpg') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-1000">
+                    
+                    <!-- Glassmorphism Location Tag -->
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                        <div class="bg-white/90 backdrop-blur-md px-6 py-3 rounded-full text-sm font-bold text-gray-800 shadow-2xl border border-white/50 mb-3 animate-bounce shadow-red-500/20">
+                            <i class="fa-solid fa-map-pin text-red-600 mr-2 text-lg"></i> ಹದಿನಾರು ಗಣೇಶೋತ್ಸವ
+                        </div>
+                        <div class="w-4 h-4 bg-red-600 rounded-full border-4 border-white shadow-lg relative">
+                            <div class="absolute inset-0 bg-red-600 rounded-full animate-ping opacity-75"></div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Action Bar Over Map -->
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="bg-dark/85 backdrop-blur-xl p-4 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 border border-white/10 shadow-2xl">
+                            <div>
+                                <p class="text-white font-bold text-sm">Hadinaru Village</p>
+                                <p class="text-gray-400 text-xs">Mysuru, Karnataka 571311</p>
+                            </div>
+                            <a href="https://maps.app.goo.gl/ny5tc9w2s6wPiuC38" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-2.5 bg-gold text-dark text-xs font-bold rounded-xl hover:bg-white hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] transition-all text-center">
+                                Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional: Send a Message Form -->
+            <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl border border-gray-100 relative overflow-hidden" data-aos="fade-up" data-aos-delay="250">
+                <div class="flex items-center justify-between mb-8">
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-800">Send a Message</h3>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest mt-1">We'd love to hear from you</p>
+                    </div>
+                    <div class="w-12 h-12 bg-maroon/5 rounded-full flex items-center justify-center text-maroon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                </div>
+
+                <!-- Form using standard layout -->
+                <form action="#" method="POST" class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Phone Number</label>
+                            <input type="tel" placeholder="+91 00000 00000" class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Message</label>
+                        <textarea rows="4" placeholder="How can we help you?" class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all text-sm resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-dark text-white font-bold rounded-xl hover:bg-maroon hover:shadow-[0_10px_20px_rgba(42,8,8,0.2)] transition-all transform hover:-translate-y-1">
+                        Send Message &rarr;
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Cinematic Gallery Hero Section -->
+<header class="relative w-full min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
+    <div class="absolute inset-0 z-0">
+        <img src="{{ url_for('static', filename='images/hero-bg.jpg') }}" alt="Gallery Background" class="w-full h-full object-cover">
+        <!-- Deep cinematic overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/95 via-dark/80 to-cream"></div>
+    </div>
+    
+    <!-- Floating decorative lights -->
+    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-gold/20 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-pink-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-8" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="w-16 h-16 mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+            <i class="fa-solid fa-camera-retro text-2xl text-gold animate-pulse"></i>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-white font-kannada drop-shadow-lg mb-4">ಹಬ್ಬದ ನೆನಪುಗಳು</h1>
+        <p class="text-gold tracking-[0.4em] uppercase text-xs md:text-sm font-bold">The Premium Visual Archive</p>
+    </div>
+</header>
+
+<section class="max-w-7xl mx-auto px-4 py-16 -mt-20 relative z-20">
+    
+    <!-- Floating Glassmorphism Filter Bar -->
+    <div class="flex justify-center mb-16" data-aos="fade-up">
+        <div class="inline-flex flex-wrap justify-center gap-2 md:gap-3 bg-white/70 backdrop-blur-lg p-2 rounded-3xl md:rounded-full shadow-xl border border-white">
+            <button class="px-6 py-2.5 rounded-full text-sm font-bold bg-dark text-gold shadow-md transition-all">All Photos</button>
+            <button class="px-6 py-2.5 rounded-full text-sm font-semibold text-gray-600 hover:bg-gold hover:text-dark transition-all">Ganesha Murti</button>
+            <button class="px-6 py-2.5 rounded-full text-sm font-semibold text-gray-600 hover:bg-gold hover:text-dark transition-all">Pooja & Aarti</button>
+            <button class="px-6 py-2.5 rounded-full text-sm font-semibold text-gray-600 hover:bg-gold hover:text-dark transition-all">Procession</button>
+            <button class="px-6 py-2.5 rounded-full text-sm font-semibold text-gray-600 hover:bg-gold hover:text-dark transition-all">2027</button>
+        </div>
+    </div>
+
+    <!-- Ultra Pro Max Masonry Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 auto-rows-[250px]">
+        
+        <!-- BASE STATIC IMAGES (G1 to G5) -->
+        
+        <!-- Large Featured Image (Spans 2 columns & 2 rows) -->
+        <div class="md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(224,184,90,0.3)] transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{ url_for('static', filename='images/g1.jpg') }}" alt="Gallery Image 1" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+            <!-- Premium Dark Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                <div class="absolute top-6 right-6 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/50 text-white transform scale-0 group-hover:scale-100 transition-transform duration-500 delay-100">
+                    <i class="fa-solid fa-expand text-lg"></i>
+                </div>
+                <h4 class="text-gold font-bold text-2xl translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">Maha Darshan</h4>
+                <p class="text-gray-300 text-sm font-kannada translate-y-4 group-hover:translate-y-0 transition duration-500 delay-150 mt-1">ಶ್ರೀ ಗಣೇಶ ಪ್ರತಿಷ್ಠಾಪನೆ</p>
+            </div>
+        </div>
+
+        <!-- Standard Tall Image (Spans 1 col, 2 rows) -->
+        <div class="md:col-span-1 md:row-span-2 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(224,184,90,0.3)] transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{ url_for('static', filename='images/g2.jpg') }}" alt="Gallery Image 2" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                <h4 class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">Evening Aarti</h4>
+                <p class="text-gold text-xs uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition duration-500 delay-150 mt-1">Divine</p>
+            </div>
+        </div>
+
+        <!-- Standard Square Image (Spans 1 col, 1 row) -->
+        <div class="md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(224,184,90,0.3)] transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+            <img src="{{ url_for('static', filename='images/g3.jpg') }}" alt="Gallery Image 3" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                <h4 class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">Cultural Dance</h4>
+            </div>
+        </div>
+
+        <!-- Standard Square Image (Spans 1 col, 1 row) -->
+        <div class="md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(224,184,90,0.3)] transition-all duration-500" data-aos="fade-up" data-aos-delay="400">
+            <img src="{{ url_for('static', filename='images/g4.jpg') }}" alt="Gallery Image 4" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                <h4 class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">Maha Dasoha</h4>
+            </div>
+        </div>
+        
+        <!-- Wide Image (Spans 2 cols, 1 row) -->
+        <div class="md:col-span-2 lg:col-span-2 md:row-span-1 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(224,184,90,0.3)] transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{ url_for('static', filename='images/g5.jpg') }}" alt="Gallery Image 5" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                <h4 class="text-gold font-bold text-xl translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">Grand Procession</h4>
+                <p class="text-white text-xs tracking-wider translate-y-4 group-hover:translate-y-0 transition duration-500 delay-150 mt-1">Shobha Yatra Highlights</p>
+            </div>
+        </div>
+
+
+        <!-- DYNAMIC IMAGES (From Admin Dashboard) -->
+        
+        {% for image in gallery %}
+        <div class="md:col-span-1 md:row-span-1 rounded-3xl overflow-hidden relative group cursor-pointer shadow-lg hover:shadow-[0_0_30px_rgba(224,184,90,0.3)] transition-all duration-500" data-aos="fade-up">
+            <!-- Ensure it pulls from the correct dynamic uploads folder -->
+            <img src="{{ url_for('static', filename='images/uploads/' + image.image_file) }}" alt="{{ image.title }}" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                <h4 class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100">{{ image.title }}</h4>
+                <p class="text-gold text-xs uppercase tracking-widest translate-y-4 group-hover:translate-y-0 transition duration-500 delay-150 mt-1">{{ image.category }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+
+        <!-- Instagram CTA Card in the Grid -->
+        <div class="md:col-span-2 lg:col-span-2 md:row-span-1 rounded-3xl overflow-hidden relative group shadow-lg bg-gradient-to-br from-dark to-maroon flex flex-col items-center justify-center text-center p-8 border border-white/10" data-aos="fade-up" data-aos-delay="200">
+            <div class="absolute right-0 bottom-0 w-48 h-48 bg-gold/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+            
+            <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 p-[2px] mb-4 group-hover:scale-110 transition duration-500 shadow-xl relative z-10">
+                <div class="w-full h-full bg-dark rounded-full flex items-center justify-center">
+                    <i class="fa-brands fa-instagram text-3xl text-white"></i>
+                </div>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 relative z-10">Unlock the Full Gallery</h3>
+            <p class="text-gray-400 text-sm mb-6 max-w-sm relative z-10">Dive into hundreds of high-quality photos, reels, and behind-the-scenes moments.</p>
+            <a href="https://www.instagram.com/basava_brigade_hadinaru?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" class="px-8 py-3 rounded-full bg-gold text-dark font-bold hover:bg-white transition-colors relative z-10 shadow-[0_5px_15px_rgba(224,184,90,0.4)] hover:-translate-y-1 transform">Follow on Instagram &rarr;</a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
